@@ -39,7 +39,7 @@
     <div class="container">
         <h1>Termes et Conditions</h1>
 
-        <p>Bienvenue sur [Nom du Forum]. En accédant et en utilisant notre forum de discussion, vous acceptez de respecter et d'être lié par les termes et conditions suivants. Si vous n'acceptez pas ces termes, veuillez ne pas utiliser notre forum.</p>
+        <p>Bienvenue sur ForumDev. En accédant et en utilisant notre forum de discussion, vous acceptez de respecter et d'être lié par les termes et conditions suivants. Si vous n'acceptez pas ces termes, veuillez ne pas utiliser notre forum.</p>
 
         <h2>1. Acceptation des Termes</h2>
         <p>En utilisant notre forum, vous acceptez ces termes et conditions. Nous nous réservons le droit de modifier ces termes à tout moment. Les modifications seront publiées sur cette page.</p>
