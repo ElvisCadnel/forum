@@ -39,7 +39,7 @@
     <div class="container">
         <h1>Politique de Confidentialité</h1>
 
-        <p>Bienvenue sur [Nom du Forum]. La confidentialité de vos données est très importante pour nous. Cette politique de confidentialité explique comment nous recueillons, utilisons et protégeons vos informations personnelles lorsque vous utilisez notre forum de discussion.</p>
+        <p>Bienvenue sur ForumDev. La confidentialité de vos données est très importante pour nous. Cette politique de confidentialité explique comment nous recueillons, utilisons et protégeons vos informations personnelles lorsque vous utilisez notre forum de discussion.</p>
 
         <h2>1. Informations que Nous Recueillons</h2>
         <p>Nous recueillons les informations suivantes :</p>
