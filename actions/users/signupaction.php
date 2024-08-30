@@ -12,17 +12,17 @@
 
     #verification si les champs sont remplis
 
-    if (!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email']) && !empty($_POST['mdp'] )) {  
+    if (!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['email']) && !empty($_POST['mdp'])) {  
 
     #recupération des données 
-   $users_name = htmlspecialchars($_POST['nom']);
-   $users_surname = htmlspecialchars($_POST['prenom']);
-   $users_address = htmlspecialchars($_POST['email']);
-   $users_password = sha1($_POST['mdp']);
+    $users_name = htmlspecialchars($_POST['nom']);
+    $users_surname = htmlspecialchars($_POST['prenom']);
+    $users_address = htmlspecialchars($_POST['email']);   
+    $users_password = sha1($_POST['mdp']);
    
   # verifier si l'utilisateur exist deja
-   $checkIsUserAlredyExists = $base->prepare('SELECT pseudo FROM users WHERE pseudo = ?');
-   $checkIsUserAlredyExists->execute(array($users_name));
+    $checkIsUserAlredyExists = $base->prepare('SELECT pseudo FROM users WHERE pseudo = ?');
+    $checkIsUserAlredyExists->execute(array($users_name));
    
   
    if ($checkIsUserAlredyExists->rowCount() == 0){

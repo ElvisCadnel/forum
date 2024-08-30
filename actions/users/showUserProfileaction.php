@@ -6,8 +6,8 @@
    # stocker l'id dans une var
     $idUsers = $_GET['id'];
 #verrifier si l'user exist
-    $checkUsersExists = $base->prepare("SELECT pseudo, prenom, email FROM users WHERE id = ?");
-    $checkUsersExists->execute(array($idUsers));
+    $checkUsersExists = $base->prepare("SELECT pseudo, prenom, email, libelle FROM users,image WHERE image.user_id = ? AND users.id = ?;");
+    $checkUsersExists->execute(array($idUsers,$idUsers));
      
     if ($checkUsersExists->rowCount() > 0){
 
@@ -17,6 +17,7 @@
       $user_pseudo = $usersInfos['pseudo'];
       $user_name = $usersInfos['prenom'];
       $user_email = $usersInfos['email'];
+      $user_image = $usersInfos['libelle'];
       
       #recuperer les questions de l'user
 

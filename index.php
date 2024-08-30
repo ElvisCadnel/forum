@@ -12,7 +12,7 @@ require('actions/questions/showAllQuestionaction.php');
     <br>
 
 
-    <div id="haut" class="container d-lg-flex justify-content-between align-items-center">
+    <div id="haut" class=" haut container d-lg-flex justify-content-between align-items-center">
         <div class="left-part position-relative px-3 ">
             <span class="mr-5">
                 <h1 class="h4 mt-4 " style="text-align:justify;">Bienvenue sur ForumDev. Forum pour devellopeur Web et
@@ -40,7 +40,7 @@ require('actions/questions/showAllQuestionaction.php');
 
     </div>
 
-    <div id="haut" class="container d-lg-flex justify-content-between align-items-center">
+    <div id="haut" class=" haut container d-lg-flex justify-content-between align-items-center">
         <div class="right-part py-5 d-flex justify-content-center align-items-center animate">
             <img width="470" class="rounded-pill img-sm-fluid" src="assets/img/IA.png">
         </div>
@@ -79,7 +79,7 @@ require('actions/questions/showAllQuestionaction.php');
         <div class="d-flex justify-content-end">
             <form method="GET" class="d-flex">
                 <input type="text" name="search" class="form-control me-2" placeholder="Rechercher des sujets...">
-                <button type="submit" class="btn btn-success"><i class="bi bi-search"></i></button>
+                <button type="submit" class="btn btn-success "><i class="bi bi-search"></i></button>
             </form>
         </div>
 
@@ -103,9 +103,12 @@ require('actions/questions/showAllQuestionaction.php');
                 $question['description'] ?>
         </p>
         <div class=" border-0 p-1 container card-footer d-md-flex justify-content-between align-items-center">
-            <p class=""><button class="btn" type="button"> <i id='like' class="bi bi-hand-thumbs-up"></i></button>
-                <button class="btn" type="button"> <i class="bi bi-hand-thumbs-down"></i></button>
-                <button class="btn" type="button"> <i class="bi bi-star"></i></button>
+            <p class=""><button class="btn like-btn" type="button"> <i id='like' class="bi bi-hand-thumbs-up"></i></button>
+                <button class="btn like-btn" type="button"> <i class="bi bi-hand-thumbs-down"></i></button>
+                <button class="btn like-btn" type="button"> 
+    <i class="bi bi-star"></i>
+</button>
+
             </p>
             <p class="text-end">Publié par :
                 <a href="profile.php?id=<?=$question['id_autheur']?>"> <?=($question['pseudo_auteur'])?> </a>
@@ -121,7 +124,11 @@ require('actions/questions/showAllQuestionaction.php');
 
     <?php include 'includes/footer.php';?>
 
+<script>
 
+
+
+</script>
 </body>
 
 </html>

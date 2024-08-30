@@ -1,12 +1,14 @@
 <?php
  require('actions/users/securityaction.php');
  require ('actions/users/showUserProfileaction.php');
-
+ require ('image.php');
  $images = [
     "./assets/img/card1.png",
     "./assets/img/card2.png",
     "./assets/img/card3.png"
 ];
+
+
 ?>
 
 <!DOCTYPE html>
@@ -31,14 +33,13 @@
         <div class="row d-flex justify-content-center">
             <div class="col-md-12 d-md-flex mb-5">
                 <div class="card col-lg-5  col-md-6 card-profile shadow-sm bg-dark text-white">
-                    <section class="d-flex">
+                    <section class="d-lg-flex justify-content-center align-items-center">
                         <div class="position-relative">
                             <div id="profilePic" class="profile-icon">
-                                <i class="bi bi-person-circle"></i>
+                                <img src="actions/users/images/<?=$user_image?>" alt="">
                             </div>
-                            <input type="file" class="file-input" accept="image/*" onchange="updateProfilePic(event)">
                         </div>
-                        <div class="card-body text-start">
+                        <div class="card-body text-lg-start text-center">
                             <h5 class="card-title">@<?= $user_pseudo ?></h5>
                             <a href="mailto:<?= $user_email ?>">
                                 <p class="card-text mb-2"><?= $user_email ?></p>
@@ -62,7 +63,7 @@
             </div>
 
             <h1 class="card-header h3 border-0 mt-5 bg-dark text-white ">Publications de <?= $user_pseudo?></h1>
-
+<br><br>
             <?php
 // Initialisation du compteur
 $index = 0;
