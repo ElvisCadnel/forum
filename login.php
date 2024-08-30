@@ -12,7 +12,8 @@
                     <h3 class="text-center mb-4"><img style="width: 40px;" src="assets/img/logcon.png"> Connexion</h3>
                     <form method="POST">
                 <!-- message de remplissage  -->
-                    <?php if(isset($errormsg)){ echo '<div class=" alert alert-danger" role="alert"><p class="text-center m-0">'.$errormsg.'</p></div>';}  ?>
+                    <?php if(isset($errormsg)){ echo '   <div class="alert alert-danger text-center alert-dismissible fade show" role="alert">'.$errormsg.'
+                           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></p></button></div>';}  ?>
  
                     <div class="form-group ">
                             <label for="nom">Pseudo</label>
